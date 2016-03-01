@@ -27,7 +27,7 @@ end
 # Fix Broken Code
 
 def first_and_last_name(first_name, last_name) #changed the name of the method as there was already a full_name method above, and made the arguments/parameters make more sense
-  puts first_name, last_name
+  first_name, last_name
 end
 
 puts full_name("bubba", "chuck", nil) #added a nil value for one argument as it needs three to run
@@ -51,17 +51,17 @@ puts final_result
 ## Enter the code for you 'join_strings' method below
 
 def join_strings(string_1, string_2)
-  puts string_1 + " " + string_2
+  string_1 + " " + string_2
 end
 
 
 ## Enter your 'old_enough_to_vote?' method below
 
-def old_enough_to_vote?(age)
-  if age > 18
-    puts "yes"
+def old_enough_to_vote?(birth_year)
+  if birth_year < 1998
+    "yes"
   else
-    puts "no"
+    "no"
   end
 end
 
